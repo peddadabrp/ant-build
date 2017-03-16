@@ -94,7 +94,7 @@ def PreparationANTEnv() {
 
     //Artifactory server details
     SERVER_ID = 'AP5P5hu1iVpC7PnPLwoSg6YCs3k'
-    ARTIFACTORY_PATTERN = "$WORKSPACE/build/jar/**.jar
+    ARTIFACTORY_PATTERN = "${WORKSPACE}/build/jar/**.jar"
     ARTIFACTORY_TARGET = "libs-snapshot-local/${JOB_NAME}/${BUILD_NUMBER}/"
 
     // Release Details
