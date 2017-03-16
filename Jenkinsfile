@@ -8,7 +8,7 @@ node {
     anthome = tool 'ANT'
     def gradlehome
     gradlehome = tool 'G3'
-    sh "ls -lart"
+    checkout scm
     if (fileExists("${WORKSPACE}/gradlew")) {
         sh "echo ### GRADLE BUILD ###"
         Gradle()
